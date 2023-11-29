@@ -7,7 +7,9 @@
 
 #board {
     display: grid;
-    grid-template-columns: repeat(10, 1rf);
+    grid-template-columns: repeat(10, 1fr);
+    /* height: 500px; */
+    position: relative;
 }
 
 #start, .boardInfo{
@@ -15,7 +17,11 @@
 }
 
 #gameOver {
+    top: 250px;
+    left: 150px;
+    position: absolute;
     display: none;
+    font-size: 60px;
 }
 
 .boardInfo{
